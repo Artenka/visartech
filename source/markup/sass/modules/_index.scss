@@ -1,0 +1,308 @@
+body {
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ background: #ffffff;
+ font-family: Montserrat, sans-serif;
+ color: #373737;
+ font-size: 16px;
+ line-height: normal;
+ overflow-x: hidden;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+
+.main-wrapper {
+ width: 1110px;
+ margin: 0 auto;
+ @include tablet {
+  width: 710px;
+ }
+ @include mobile {
+  width: 310px;
+ }
+}
+
+.main {
+ flex: 1 0 auto;
+ overflow-x: hidden;
+ padding: 60px 0;
+}
+
+.br-lg {
+ display: block;
+ @include tablet {
+  display: none;
+ }
+ @include mobile {
+  display: none;
+ }
+}
+
+.br-lp {
+ display: none;
+ @include laptop {
+  display: block;
+ }
+ @include tablet {
+  display: none;
+ }
+ @include mobile {
+  display: none;
+ }
+}
+
+.br-lp-md {
+ display: none;
+ @include laptop {
+  display: block;
+ }
+ @include tablet {
+  display: block;
+ }
+ @include mobile {
+  display: none;
+ }
+}
+
+.br-lp-sm {
+ display: none;
+ @include laptop {
+  display: block;
+ }
+ @include tablet {
+  display: block;
+ }
+ @include mobile {
+  display: block;
+ }
+}
+
+.br-lg-md {
+ display: block;
+ @include tablet {
+  display: block;
+ }
+ @include mobile {
+  display: none;
+ }
+}
+
+.br-lg--sm {
+ display: block;
+ @include tablet {
+  display: none;
+ }
+ @include mobile {
+  display: block;
+ }
+}
+
+.br-md-sm {
+ display: none;
+ @include tablet {
+  display: block;
+ }
+ @include mobile {
+  display: block;
+ }
+}
+
+.br-md {
+ display: none;
+ @include tablet {
+  display: block;
+ }
+ @include mobile {
+  display: none;
+ }
+}
+
+.br-sm {
+ display: none;
+ @include tablet {
+  display: none;
+ }
+ @include mobile {
+  display: block;
+ }
+}
+
+.br-sm-text {
+ display: none;
+ @include tablet {
+  display: none;
+ }
+ @include mobile {
+  display: inline;
+ }
+}
+
+.inline-lg {
+ display: inline;
+ @include tablet {
+  display: none;
+ }
+ @include mobile {
+  display: none;
+ }
+}
+
+.inline-lp {
+ display: none;
+ @include laptop {
+  display: inline;
+ }
+ @include tablet {
+  display: none;
+ }
+ @include mobile {
+  display: none;
+ }
+}
+
+.inline-lp-md {
+ display: none;
+ @include laptop {
+  display: inline;
+ }
+ @include tablet {
+  display: inline;
+ }
+ @include mobile {
+  display: none;
+ }
+}
+
+.inline-lp-sm {
+ display: none;
+ @include laptop {
+  display: inline;
+ }
+ @include tablet {
+  display: inline;
+ }
+ @include mobile {
+  display: inline;
+ }
+}
+
+.inline-lg-md {
+ display: inline;
+ @include tablet {
+  display: inline;
+ }
+ @include mobile {
+  display: none;
+ }
+}
+
+.inline-md-sm {
+ display: none;
+ @include tablet {
+  display: inline;
+ }
+ @include mobile {
+  display: inline;
+ }
+}
+
+.inline-md {
+ display: none;
+ @include tablet {
+  display: inline;
+ }
+ @include mobile {
+  display: none;
+ }
+}
+
+.inline-sm {
+ display: none;
+ @include tablet {
+  display: none;
+ }
+ @include mobile {
+  display: inline;
+ }
+}
+
+.hidden {
+ display: none;
+}
+
+.clear {
+ display: table;
+ clear: both;
+}
+
+p, h1, h2, h3, h4, h5, h6, img {
+ display: block;
+}
+
+a {
+ color: #373737;
+ text-decoration: none;
+ cursor: pointer;
+ transition: 0.5s;
+}
+
+button {
+ display: block;
+ background: none;
+ border: none;
+ cursor: pointer;
+ transition: 0.5s;
+}
+
+em {
+ font-style: italic;
+}
+
+b, strong {
+ font-weight: 700;
+}
+
+input, textarea, select, .input, .textarea, .select {
+ width: 100%;
+ display: block;
+ border: none;
+ outline: none;
+ transition: 0.5s;
+}
+
+textarea {
+ resize: none;
+}
+
+label {
+ display: block;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+ color: rgba(55, 55, 55, 0.6);
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+ color: rgba(55, 55, 55, 0.6);
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+ color: rgba(55, 55, 55, 0.6);
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: rgba(55, 55, 55, 0.6);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: rgba(55, 55, 55, 0.6);
+}
+
+::placeholder { /* Most modern browsers support this now. */
+ color: rgba(55, 55, 55, 0.6);
+}
+
+input:-webkit-autofill {
+ -webkit-box-shadow: 0 0 0 30px white inset;
+}

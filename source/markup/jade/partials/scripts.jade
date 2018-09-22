@@ -1,0 +1,37 @@
+script.
+  $(function () {
+    // smooth scroll on anchors
+    $(document).on('click', '.link-smooth', function (event) {
+      var link;
+      if($(this).data('href')){ link = $(this).data('href')} else {link = $(this).attr('href')}
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: $(link).offset().top + 10
+      }, 1500);
+    });
+
+    //popup link
+    $("body").click(function () {
+      hidePopup();
+    });
+    $(".popup, .popup-link").click(function (e) {
+      e.stopPropagation();
+    });
+
+    $('.popup__close').click(function () {
+      hidePopup();
+    });
+  });
+
+  function showPopup(popupId) {
+    $(popupId).fadeIn(400);
+  }
+  function hidePopup() {
+    $('.popup-layout').fadeOut(400);
+    $('.popup-video').find('iframe').remove();
+  }
+
+  function showVideoPopup(videoId) {
+    showPopup('#popup-video');
+    $('.popup-video .popup-video__video').html('').append('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/' + videoId + '?rel=0&amp&autoplay=1;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+  }
