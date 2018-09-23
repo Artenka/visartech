@@ -6,6 +6,7 @@
   padding-top: 21px;
  }
 }
+
 .title-2 {
  font-size: 40px;
  font-weight: 700;
@@ -14,10 +15,12 @@
   padding-top: 18px;
  }
 }
+
 .title-3 {
  font-size: 36px;
  font-weight: 700;
 }
+
 .title-4 {
  font-size: 26px;
  font-weight: 700;
@@ -53,10 +56,10 @@
 .text-muted {
  color: rgba(55, 55, 55, 0.6);
 }
+
 .text-white {
  color: #fff;
 }
-
 
 .search {
  height: 75px;
@@ -109,4 +112,27 @@
  position: relative;
  top: 0;
  left: 0;
+}
+
+.icon-outline {
+ position: relative;
+ &:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: no-repeat center / contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/common/icon-outline.svg);
+  z-index: -1;
+  animation: spin 24s linear infinite;
+ }
+}
+
+@keyframes spin {
+ 100% {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+ }
 }

@@ -35,19 +35,19 @@ block contents
             .about-vision-item__content
               h2.title-4 How virtual trainings<br> and simulations help education
               p The thing that is most exciting about studying the universe is also the most frustrating and that is that no matter how expert we get, we are always just getting started. But if it’s any consolation, some of the most advanced minds in science and from history always felt that way about space. Even the greats such as Copernicus and Einstein looked up into space and felt like thpeople. But more than that it is as though this is what we were created to do.
-            .about-vision-item__icon(style="background-image: url(img/about/about-icon-1.svg)")
+            .icon-outline.about-vision-item__icon(style="background-image: url(img/about/about-icon-1.svg)")
           li.about-vision-item
             h2.about-vision-item__number 2
             .about-vision-item__content
               h2.title-4 How virtual trainings<br> and simulations help education
               p The thing that is most exciting about studying the universe is also the most frustrating and that is that no matter how expert we get, we are always just getting started. But if it’s any consolation, some of the most advanced minds in science and from history always felt that way about space. Even the greats such as Copernicus and Einstein looked up into space and felt like thpeople. But more than that it is as though this is what we were created to do.
-            .about-vision-item__icon(style="background-image: url(img/about/about-icon-1.svg)")
+            .icon-outline.about-vision-item__icon(style="background-image: url(img/about/about-icon-1.svg)")
           li.about-vision-item
             h2.about-vision-item__number 3
             .about-vision-item__content
               h2.title-4 How virtual trainings<br> and simulations help education
               p The thing that is most exciting about studying the universe is also the most frustrating and that is that no matter how expert we get, we are always just getting started. But if it’s any consolation, some of the most advanced minds in science and from history always felt that way about space. Even the greats such as Copernicus and Einstein looked up into space and felt like thpeople. But more than that it is as though this is what we were created to do.
-            .about-vision-item__icon(style="background-image: url(img/about/about-icon-1.svg)")
+            .icon-outline.about-vision-item__icon(style="background-image: url(img/about/about-icon-1.svg)")
 
       .about-faq
         h2.about-faq__title.title-2.title-line FAQ
@@ -79,3 +79,23 @@ block contents
               p.about-faq-item__text The thing that is most exciting about studying the universe is also the most frustrating and that is that no matter how expert we get, we are always just getting started. But if it’s any consolation, some of the most advanced minds in science and from history always felt that way about space. Even the greats such as Copernicus and Einstein looked up into space and felt like thpeople. But more than that it is as though this is what we were created to do.
 
   include ../partials/footer
+
+  script.
+    $(function(){
+      $('.about-faq-item').click(function(){
+        if($(this).hasClass('about-faq-item--active')) {
+          faqActiveSlideUp();
+        } else {
+          faqActiveSlideUp();
+          $(this).find('.about-faq-item__text').slideDown(300, function () {
+            $(this).closest('.about-faq-item').addClass('about-faq-item--active');
+          });
+        }
+      });
+    })
+
+    function faqActiveSlideUp() {
+      $('.about-faq-item--active').find('.about-faq-item__text').slideUp(300, function () {
+        $('.about-faq-item--active').removeClass('about-faq-item--active');
+      });
+    }
