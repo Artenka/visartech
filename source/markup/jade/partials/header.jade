@@ -1,11 +1,43 @@
 header.main-header
   .main-wrapper
     a(href="/").main-header__logo
-    .main-header-menu
-      a(href="#").main-header-menu__item.main-header-menu__item--active Home
-      a(href="#").main-header-menu__item About
-      a(href="#").main-header-menu__item Team
-      a(href="#").main-header-menu__item Projects
-      a(href="#").main-header-menu__item Blog
-      a(href="#").main-header-menu__item Contact Us
+    ul.main-header-menu
+      li.main-header-menu__item.main-header-menu__item--active
+        a(href="#").main-header-menu__item-link Home
+      li.main-header-menu__item
+        a(href="#").main-header-menu__item-link About
+      li.main-header-menu__item
+        a(href="#").main-header-menu__item-link Team
+        .main-header-submenu-layout
+          .main-header-submenu
+            a(href="#").main-header-submenu__item.main-header-submenu__item--active
+              .main-header-submenu__item-icon(style="background-image: url(img/common/header/team-menu-item-1.svg)")
+              p.main-header-submenu__item-name Core
+            a(href="#").main-header-submenu__item
+              .main-header-submenu__item-icon(style="background-image: url(img/common/header/team-menu-item-2.svg)")
+              p.main-header-submenu__item-name Leaders
+            a(href="#").main-header-submenu__item
+              .main-header-submenu__item-icon(style="background-image: url(img/common/header/team-menu-item-3.svg)")
+              p.main-header-submenu__item-name Developers
+            a(href="#").main-header-submenu__item
+              .main-header-submenu__item-icon(style="background-image: url(img/common/header/team-menu-item-4.svg)")
+              p.main-header-submenu__item-name QA
+            a(href="#").main-header-submenu__item
+              .main-header-submenu__item-icon(style="background-image: url(img/common/header/team-menu-item-5.svg)")
+              p.main-header-submenu__item-name Administrative
+      li.main-header-menu__item
+        a(href="#").main-header-menu__item-link Projects
+      li.main-header-menu__item
+        a(href="#").main-header-menu__item-link Blog
+      li.main-header-menu__item
+        a(href="#").main-header-menu__item-link Contact Us
 
+
+script.
+  $(function(){
+    $('.main-header-submenu__item').hover(function(){
+      $('.main-header-submenu__item-name').css({opacity: 1, marginTop: '8px'});
+    }, function(){
+      $('.main-header-submenu__item-name').css({opacity: 0, marginTop: '-24px'});
+    });
+  });
