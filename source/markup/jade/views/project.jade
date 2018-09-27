@@ -1,0 +1,76 @@
+extends ../layouts/main
+
+block contents
+  section.intro.intro--project
+    .main-wrapper
+      include ../partials/header
+      .intro-thumb
+        .intro-thumb__image(style="background-image: url(img/common/intro-bg.jpg)")
+      .intro-main
+        .intro-main__content
+          h2.intro-main__subtitle.subtitle.text-white Simulations / Oculus Rift / HTC Vive
+          h1.intro-main__title.title.title-line.text-white Archimedes<br>Principle Simulation
+        .intro-main-overview
+          h2.intro-main-overview__title.subtitle Project overview
+          ul.intro-main-overview__list
+            li.intro-main-overview__item
+              h3.intro-main-overview__item-title Duration
+              .intro-main-overview__item-text
+                .intro-main-overview__item-text-icon(style="background-image: url(img/common/clock-icon.svg)")
+                p 3 weeks
+            li.intro-main-overview__item
+              h3.intro-main-overview__item-title Industry
+              .intro-main-overview__item-text
+                .intro-main-overview__item-text-icon(style="background-image: url(img/common/clock-icon.svg)")
+                p Energy&Utilities
+            li.intro-main-overview__item
+              h3.intro-main-overview__item-title Industry
+              img(src="img/common/intro-publisher-logo.png").intro-main-overview__item-image
+      .link-smooth.intro-next(data-href=".main")
+
+  .main#project
+    .main-wrapper
+      .project-entry
+        .project-row-1
+          .project-row-1__left
+            h3.project-row-1__subtitle.subtitle About
+            h2.project-row-1__title.title-2.title-line Project description headline
+          .project-row-1__right
+            h3.subtitle-2.project-row-1__headline Headline
+            p.project-row-1__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+        .project-row-2
+          .project-row-2__left
+            h2.project-row-2__title.title-2.title-line Technology<br> we used
+          .project-row-2__right
+            ul.project-row-2-technologies
+              li.project-row-2-technologies__item
+                .project-row-2-technologies__item-icon(style="background-image: url(img/project/technologies-icon-1.svg)")
+              li.project-row-2-technologies__item
+                .project-row-2-technologies__item-icon(style="background-image: url(img/project/technologies-icon-2.svg)")
+              li.project-row-2-technologies__item
+                .project-row-2-technologies__item-icon(style="background-image: url(img/project/technologies-icon-3.svg)")
+            h3.subtitle-2.project-row-2__headline Headline
+            p.project-row-2__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+      .project-video
+        img(src="img/common/intro-bg.jpg")
+
+      .project-author
+        .project-author-name
+          h2.text-white.title-4 Name Surname
+          h3.text-white Position
+        .project-author-image(style="background-image: url(img/project/project-author.jpg)")
+        .project-author-about
+          h2.title-3.text-white Lorem ipsum dolor amet elit.
+          p.text-white Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+        .fill-brief
+          h2.fill-brief__title.text-white.title-4 Want to create your own? Start with a short brief
+          a(href="#").fill-brief__btn.btn.btn--md.btn--white
+            span FILL THE BRIEF
+
+    include ../partials/contacts
+
+
+  include ../partials/footer

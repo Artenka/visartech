@@ -1,6 +1,6 @@
 .btn-arrow {
  background: url(../img/common/arrow-right-circle.svg) no-repeat center left;
- color: #ffffff;
+ color: #373737;
  font-size: 17px;
  font-weight: 700;
  text-transform: uppercase;
@@ -8,7 +8,6 @@
  padding: 3px 0 4px 47px;
  transition: 0.5s;
  &:hover {
-  //background-position: center left 3px;
   color: #f37321;
  }
 }
@@ -31,7 +30,6 @@
   position: absolute;
   top: 0;
   left: -100%;
-  z-index: -1;
   transition: 0.7s;
  }
  &:hover {
@@ -41,7 +39,22 @@
   }
  }
 
+ span {
+  position: relative;
+  z-index: 2;
+ }
+
  &.btn--md {
   padding: 27px 25px;
+ }
+ &.btn--white {
+  border-color: #fff;
+  color: #fff;
+  &:before {
+   background: #fff;
+  }
+  &:hover {
+   color: #373737;
+  }
  }
 }

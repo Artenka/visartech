@@ -1,6 +1,6 @@
 .intro {
  min-height: 100vh;
- background: no-repeat center / cover;
+ background: no-repeat center / cover, #000;
  position: relative;
  &:before {
   content: '';
@@ -62,21 +62,72 @@
   }
  }
 
- &.intro--about {
+ .main-header-submenu {
 
-  .title.title-line {
-   &:before {
-    width: 137px;
+  .main-header-submenu__item {
+
+   &.main-header-submenu__item--active {
+
+    .main-header-submenu__item-name:before {
+     background: #fff;
+    }
    }
   }
  }
+
+ &.intro--about {
+
+  //.title.title-line {
+  // &:before {
+  //  width: 137px;
+  // }
+  //}
+ }
  &.intro--team {
 
-  .title.title-line {
-   &:before {
-    width: 106px;
-   }
+  //.title.title-line {
+  // &:before {
+  //  width: 106px;
+  // }
+  //}
+ }
+
+ &.intro--project {
+  &:before, &:after {
+   display: none;
   }
+
+  .intro-main {
+   flex-direction: row;
+   align-items: center;
+   padding: 100px 0;
+  }
+ }
+}
+
+.intro-thumb {
+ width: 920px;
+ height: 552px;
+ position: absolute;
+ top: calc(50% - 245px);
+ left: calc(50% - 460px);
+ opacity: 0.6;
+ &:before {
+  content: '';
+  width: 152px;
+  height: 152px;
+  background: rgba(243, 115, 33, 0.9);
+  position: absolute;
+  bottom: -25px;
+  right: -25px;
+  z-index: -1;
+ }
+
+ .intro-thumb__image {
+  width: 100%;
+  height: 100%;
+  background: no-repeat center / cover;
+  position: relative;
  }
 }
 
@@ -96,6 +147,11 @@
   font-size: 26px;
   line-height: 36px;
   margin-top: 30px;
+ }
+
+ .intro-main__content {
+  flex: 1;
+  padding-right: 190px;
  }
 }
 
@@ -123,4 +179,64 @@
  50%  {bottom: 20px;}
  75%  {bottom: 26px;}
  100% {bottom: 26px;}
+}
+
+.intro-main-overview {
+ width: 285px;
+ border: 1px solid #979797;
+ background-color: rgba(0, 0, 0, 0.15);
+ padding: 20px;
+ margin-top: 65px;
+
+ .intro-main-overview__title {
+  color: #fff;
+ }
+
+ .intro-main-overview__list {
+  margin-top: 38px;
+ }
+
+ .intro-main-overview__item {
+  margin-bottom: 25px;
+  &:last-child {
+   margin-bottom: 0;
+  }
+
+  .intro-main-overview__item-title {
+   color: rgba(255,255,255,0.6);
+   font-size: 16px;
+   font-weight: 500;
+  }
+
+  .intro-main-overview__item-text, .intro-main-overview__item-image {
+   margin-top: 10px;
+  }
+
+  .intro-main-overview__item-text {
+   display: flex;
+   align-items: flex-start;
+
+   .intro-main-overview__item-text-icon {
+    width: 18px;
+    height: 18px;
+    background: no-repeat center / contain;
+    margin: 5px 15px 0 0;
+   }
+
+   &, & p {
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: 300;
+   }
+
+   p {
+    flex: 1;
+   }
+  }
+
+  .intro-main-overview__item-image {
+   width: auto;
+   max-height: 28px;
+  }
+ }
 }

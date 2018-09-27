@@ -18,11 +18,9 @@
 .about-entry {
  position: relative;
  &:before {
+  @extend .grey-line;
   content: '';
-  width: 4px;
   height: calc(100% - 18px);
-  background: rgba(55,55,55,0.3);
-  position: absolute;
   top: 9px;
   left: 0;
  }
@@ -31,12 +29,6 @@
 .about-row-1 {
  align-items: flex-start;
 
- .about-row-1__subtitle {
-  color: rgba(55,55,55,0.4);
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: uppercase;
- }
  .about-row-1__text {
   margin-top: 10px;
  }
