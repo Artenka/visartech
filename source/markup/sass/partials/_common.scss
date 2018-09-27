@@ -148,3 +148,10 @@
   transform: rotate(360deg);
  }
 }
+
+.orange-circle {
+ width: 550px;
+ height: 550px;
+ background: url(../img/common/orange-circle.svg) no-repeat center / contain;
+ animation: spin 36s linear infinite;
+}

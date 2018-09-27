@@ -103,6 +103,15 @@
 
 .project-video {
  margin: 20px 0;
+ position: relative;
+ &:before {
+  @extend .orange-circle;
+  content: '';
+  position: absolute;
+  top: -242px;
+  left: -275px;
+  z-index: -1;
+ }
 
  img, iframe {
   display: block;
