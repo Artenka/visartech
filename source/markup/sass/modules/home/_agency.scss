@@ -1,0 +1,48 @@
+.home-agency {
+ margin-top: 60px;
+
+ .main-wrapper {
+  padding-left: 30px;
+ }
+}
+
+.home-agency-list {
+ display: flex;
+ flex-wrap: wrap;
+ margin-top: 52px;
+}
+
+.home-agency-item {
+ width: 510px;
+ display: flex;
+ align-items: flex-start;
+ margin: 0 60px 40px 0;
+ &:nth-child(2n+2) {
+  margin-right: 0;
+ }
+
+ .home-agency-item__icon {
+  width: 101px;
+  height: 101px;
+  margin-right: 23px;
+ }
+
+ .home-agency-item__content {
+  flex: 1;
+ }
+
+ .home-agency-item__title {
+
+ }
+ .home-agency-item__text {
+  color: rgba(55,55,55,0.6);
+  margin-top: 20px;
+ }
+}
+
+.home-agency-btn-layout {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-top: 10px;
+}

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="101" height="101"
+     viewBox="0 0 101 101">
+    <defs>
+        <path id="og4bb"
+              d="M745.21 834v36.31a20.72 20.72 0 0 1-12.35 19L721 894.48l-11.86-5.22a20.72 20.72 0 0 1-12.35-19V834l24.21-6.5 15.19 4.08"/>
+        <path id="og4bc" d="M733.63 864.07L721 842.2l-17.24 29.86h34.48"/>
+        <path id="og4bd" d="M721 854.19v7.23"/>
+    </defs>
+    <g>
+        <g transform="translate(-671 -809)">
+            <use fill="#fff" fill-opacity="0" stroke="#f37321" stroke-linecap="round" stroke-linejoin="round"
+                 stroke-miterlimit="50" stroke-width="3" xlink:href="#og4bb"/>
+        </g>
+        <g transform="translate(-671 -809)">
+            <use fill="#fff" fill-opacity="0" stroke="#f37321" stroke-linecap="round" stroke-linejoin="round"
+                 stroke-miterlimit="50" stroke-width="3" xlink:href="#og4bc"/>
+        </g>
+        <g transform="translate(-671 -809)">
+            <use fill="#fff" fill-opacity="0" stroke="#f37321" stroke-linecap="round" stroke-linejoin="round"
+                 stroke-miterlimit="50" stroke-width="3" xlink:href="#og4bd"/>
+        </g>
+    </g>
+</svg>

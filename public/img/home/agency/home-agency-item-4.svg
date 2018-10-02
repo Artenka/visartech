@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="101" height="101"
+     viewBox="0 0 101 101">
+    <defs>
+        <path id="qajvb" d="M839.38 3375.58a12.16 12.16 0 0 0 22.24 0"/>
+        <path id="qajvc" d="M875.42 3376.75a12.17 12.17 0 0 0 4.8-23.35"/>
+        <path id="qajvd" d="M855.92 3360.73a3.85 3.85 0 1 1 7.7 0 3.85 3.85 0 0 1-7.7 0z"/>
+        <path id="qajve" d="M837.38 3360.73a3.85 3.85 0 1 1 7.7 0 3.85 3.85 0 0 1-7.7 0z"/>
+        <path id="qajvf"
+              d="M873 3344.79a24.72 24.72 0 0 1-30-4.06 25.56 25.56 0 0 1-17.3 11.66h-.34a12.17 12.17 0 0 0 .17 24.34"/>
+        <path id="qajvg"
+              d="M853.8 3395.13a6.08 6.08 0 0 0-9.03 2.92 6.14 6.14 0 1 0 11.84 1.65 24.49 24.49 0 0 0 18.81-24v-20.28a24.92 24.92 0 1 0-49.84 0v16"/>
+    </defs>
+    <g>
+        <g transform="translate(-800 -3318)">
+            <use fill="#fff" fill-opacity="0" stroke="#f37321" stroke-linecap="round" stroke-linejoin="round"
+                 stroke-miterlimit="50" stroke-width="3" xlink:href="#qajvb"/>
+        </g>
+        <g transform="translate(-800 -3318)">
+            <use fill="#fff" fill-opacity="0" stroke="#f37321" stroke-linecap="round" stroke-linejoin="round"
+                 stroke-miterlimit="50" stroke-width="3" xlink:href="#qajvc"/>
+        </g>
+        <g transform="translate(-800 -3318)">
+            <use fill="#fff" fill-opacity="0" stroke="#f37321" stroke-linecap="round" stroke-linejoin="round"
+                 stroke-miterlimit="50" stroke-width="3" xlink:href="#qajvd"/>
+        </g>
+        <g transform="translate(-800 -3318)">
+            <use fill="#fff" fill-opacity="0" stroke="#f37321" stroke-linecap="round" stroke-linejoin="round"
+                 stroke-miterlimit="50" stroke-width="3" xlink:href="#qajve"/>
+        </g>
+        <g transform="translate(-800 -3318)">
+            <use fill="#fff" fill-opacity="0" stroke="#f37321" stroke-linecap="round" stroke-linejoin="round"
+                 stroke-miterlimit="50" stroke-width="3" xlink:href="#qajvf"/>
+        </g>
+        <g transform="translate(-800 -3318)">
+            <use fill="#fff" fill-opacity="0" stroke="#f37321" stroke-linecap="round" stroke-linejoin="round"
+                 stroke-miterlimit="50" stroke-width="3" xlink:href="#qajvg"/>
+        </g>
+    </g>
+</svg>

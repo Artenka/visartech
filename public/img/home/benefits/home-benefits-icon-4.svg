@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="101" height="101"
+     viewBox="0 0 101 101">
+    <defs>
+        <path id="4awnb" d="M1082.57 1415.25a12.07 12.07 0 1 0 2 6.69"/>
+        <path id="4awnc" d="M1067.41 1388.33a12.07 12.07 0 1 0 2 6.69"/>
+        <path id="4awnd" d="M1097.73 1388.33a12.07 12.07 0 1 0 2 6.69"/>
+        <path id="4awne" d="M1093.43 1446.08a24.16 24.16 0 0 0-41.83 0"/>
+        <path id="4awnf" d="M1108.59 1419.16a24.16 24.16 0 0 0-20.92-12.07"/>
+        <path id="4awng" d="M1036.44 1419.16a24.13 24.13 0 0 1 20.91-12.07"/>
+    </defs>
+    <g>
+        <g transform="translate(-1022 -1364)">
+            <use fill="#fff" fill-opacity="0" stroke="#f37321" stroke-linecap="round" stroke-linejoin="round"
+                 stroke-miterlimit="50" stroke-width="3" xlink:href="#4awnb"/>
+        </g>
+        <g transform="translate(-1022 -1364)">
+            <use fill="#fff" fill-opacity="0" stroke="#f37321" stroke-linecap="round" stroke-linejoin="round"
+                 stroke-miterlimit="50" stroke-width="3" xlink:href="#4awnc"/>
+        </g>
+        <g transform="translate(-1022 -1364)">
+            <use fill="#fff" fill-opacity="0" stroke="#f37321" stroke-linecap="round" stroke-linejoin="round"
+                 stroke-miterlimit="50" stroke-width="3" xlink:href="#4awnd"/>
+        </g>
+        <g transform="translate(-1022 -1364)">
+            <use fill="#fff" fill-opacity="0" stroke="#f37321" stroke-linecap="round" stroke-linejoin="round"
+                 stroke-miterlimit="50" stroke-width="3" xlink:href="#4awne"/>
+        </g>
+        <g transform="translate(-1022 -1364)">
+            <use fill="#fff" fill-opacity="0" stroke="#f37321" stroke-linecap="round" stroke-linejoin="round"
+                 stroke-miterlimit="50" stroke-width="3" xlink:href="#4awnf"/>
+        </g>
+        <g transform="translate(-1022 -1364)">
+            <use fill="#fff" fill-opacity="0" stroke="#f37321" stroke-linecap="round" stroke-linejoin="round"
+                 stroke-miterlimit="50" stroke-width="3" xlink:href="#4awng"/>
+        </g>
+    </g>
+</svg>

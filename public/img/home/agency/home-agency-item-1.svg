@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="101" height="101"
+     viewBox="0 0 101 101">
+    <defs>
+        <path id="4g35b"
+              d="M272.3 3202.62a28.78 28.78 0 0 0 3.8-10h9.05c.47-3.38.47-6.8 0-10.18h-9.05a28.84 28.84 0 0 0-4.78-11.53l6.4-6.4a36.83 36.83 0 0 0-7.2-7.2l-6.4 6.39a29 29 0 0 0-11.53-4.8v-9c-3.38-.47-6.8-.47-10.18 0v9a29 29 0 0 0-11.53 4.77l-6.4-6.39a36.83 36.83 0 0 0-7.2 7.2l6.4 6.4a28.84 28.84 0 0 0-4.78 11.53h-9c-.47 3.38-.47 6.8 0 10.18h9a29 29 0 0 0 4.77 11.53l-6.39 6.4a36.83 36.83 0 0 0 7.2 7.2l6.4-6.39a29 29 0 0 0 11.53 4.77v9.05c3.38.47 6.8.47 10.18 0v-9.05a28.73 28.73 0 0 0 9.96-3.78"/>
+        <path id="4g35c" d="M274.37 3214.37l-15.3-15.3a16.33 16.33 0 1 0-5 3.44"/>
+    </defs>
+    <g>
+        <g transform="translate(-197 -3137)">
+            <use fill="#fff" fill-opacity="0" stroke="#f37321" stroke-linecap="round" stroke-linejoin="round"
+                 stroke-miterlimit="50" stroke-width="3" xlink:href="#4g35b"/>
+        </g>
+        <g transform="translate(-197 -3137)">
+            <use fill="#fff" fill-opacity="0" stroke="#f37321" stroke-linecap="round" stroke-linejoin="round"
+                 stroke-miterlimit="50" stroke-width="3" xlink:href="#4g35c"/>
+        </g>
+    </g>
+</svg>

@@ -75,22 +75,22 @@
   }
  }
 
- &.intro--about {
-
-  //.title.title-line {
-  // &:before {
-  //  width: 137px;
-  // }
-  //}
- }
- &.intro--team {
-
-  //.title.title-line {
-  // &:before {
-  //  width: 106px;
-  // }
-  //}
- }
+ //&.intro--about {
+ //
+ // .title.title-line {
+ //  &:before {
+ //   width: 137px;
+ //  }
+ // }
+ //}
+ //&.intro--team {
+ //
+ // .title.title-line {
+ //  &:before {
+ //   width: 106px;
+ //  }
+ // }
+ //}
 
  &.intro--project {
   &:before, &:after {
@@ -152,6 +152,34 @@
  .intro-main__content {
   flex: 1;
   padding-right: 190px;
+ }
+
+ .intro-main__video-btn {
+  display: flex;
+  align-items: center;
+  margin-top: 44px;
+  cursor: pointer;
+  &:hover {
+
+   .intro-main__video-btn-icon {
+    transform: scale(1.05);
+   }
+  }
+
+  .intro-main__video-btn-icon {
+   width: 64px;
+   height: 64px;
+   background: url(../img/common/video-btn-icon.svg) no-repeat center / contain;
+   margin-right: 20px;
+   transition: 0.7s;
+  }
+  .intro-main__video-btn-text {
+   color: #fff;
+   font-size: 17px;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: 2.14px;
+  }
  }
 }
 

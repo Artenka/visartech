@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="150"
+     viewBox="0 0 150 150">
+    <defs>
+        <path id="7ghlb" d="M1151.94 1836.71a45.65 45.65 0 0 0-43.24-31.04v45.63h45.63"/>
+        <path id="7ghlc" d="M1097.29 1817.08a45.63 45.63 0 1 0 45.63 45.63h-45.63v-33.06"/>
+    </defs>
+    <g>
+        <g transform="translate(-1028 -1782)">
+            <use fill="#fff" fill-opacity="0" stroke="#f37321" stroke-linecap="round" stroke-linejoin="round"
+                 stroke-miterlimit="50" stroke-width="3" xlink:href="#7ghlb"/>
+        </g>
+        <g transform="translate(-1028 -1782)">
+            <use fill="#fff" fill-opacity="0" stroke="#f37321" stroke-linecap="round" stroke-linejoin="round"
+                 stroke-miterlimit="50" stroke-width="3" xlink:href="#7ghlc"/>
+        </g>
+    </g>
+</svg>

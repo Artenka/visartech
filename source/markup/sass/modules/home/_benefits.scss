@@ -1,0 +1,128 @@
+.home-benefits {
+
+ .main-wrapper {
+  display: flex;
+  align-items: flex-start;
+ }
+
+ .home-benefits__left {
+  width: 445px;
+  padding-left: 30px;
+  position: relative;
+  &:before {
+   @extend .grey-line;
+   content: '';
+   height: 283px;
+   top: 78px;
+   left: 0;
+  }
+ }
+ .home-benefits__right {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 80px 0 0 30px;
+ }
+
+ .home-benefits__image {
+  width: calc(50vw - 195px);
+  height: 452px;
+  background: no-repeat center / cover;
+  margin-top: 116px;
+  position: relative;
+  top: 0;
+  left: calc(525px - 50vw);
+ }
+}
+
+.home-benefits-box {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ width: calc(100% + 45px);
+ background-color: rgba(243, 115, 33, 0.9);
+ padding: 30px 68px;
+ margin: -140px 0 0 -100px;
+ position: relative;
+ z-index: 2;
+
+ .home-benefits-box__text {
+  margin-top: 16px;
+ }
+ .home-benefits-box__btn {
+  margin-top: 32px;
+ }
+}
+
+.home-benefits-col {
+ width: 284px;
+
+ &.home-benefits-col--2 {
+  padding-top: 175px;
+
+  .home-benefits-item:first-child {
+   &:before {
+    content: '';
+    width: 152px;
+    height: 152px;
+    background: rgba(243, 115, 33, 0.9);
+    position: absolute;
+    top: -57px;
+    right: -57px;
+    z-index: -1;
+   }
+  }
+ }
+}
+
+.home-benefits-list {
+
+}
+
+.home-benefits-item {
+ width: 284px;
+ min-height: 302px;
+ border: 3px solid rgba(55,55,55,0.6);
+ background: #fff;
+ padding: 70px 24px 16px 31px;
+ margin-bottom: 77px;
+ position: relative;
+ &:last-child {
+  margin-bottom: 0;
+ }
+
+ .home-benefits-item__number {
+  letter-spacing: -0.55px;
+  position: absolute;
+  top: -40px;
+  right: 0;
+ }
+
+ .home-benefits-item__icon {
+  width: 115px;
+  height: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  position: absolute;
+  top: -57px;
+  left: 24px;
+  z-index: 2;
+
+  .icon-outline {
+   width: 100px;
+   height: 100px;
+  }
+ }
+
+ .home-benefits-item__title {
+
+ }
+ .home-benefits-item__text {
+  color: rgba(55,55,55,0.6);
+  letter-spacing: -0.3px;
+  margin-top: 20px;
+ }
+}

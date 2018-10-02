@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="101" height="101"
+     viewBox="0 0 101 101">
+    <defs>
+        <path id="f001b" d="M1105.76 1037.57a33.76 33.76 0 0 0-66.82 9.06h15.18L1059 1061h27.11l4.89-14.37h15.19"/>
+        <path id="f001c"
+              d="M1044.66 1041a19.93 19.93 0 0 1 19.79-17.61 18.7 18.7 0 0 1 14.08 5.84l13-5.73a28.09 28.09 0 0 0-46.87 17.5"/>
+        <path id="f001d"
+              d="M1076.85 1052c3-2.26 18.54-22.36 18.54-22.36s-23.69 9.22-26.7 11.47a6.82 6.82 0 1 0 8.16 10.89z"/>
+        <path id="f001e" d="M1071.81 1046.72a1.16 1.16 0 1 1 2.32 0 1.16 1.16 0 0 1-2.32 0z"/>
+    </defs>
+    <g>
+        <g transform="translate(-1022 -985)">
+            <use fill="#fff" fill-opacity="0" stroke="#f37321" stroke-linecap="round" stroke-linejoin="round"
+                 stroke-miterlimit="50" stroke-width="3" xlink:href="#f001b"/>
+        </g>
+        <g transform="translate(-1022 -985)">
+            <use fill="#fff" fill-opacity="0" stroke="#f37321" stroke-linecap="round" stroke-linejoin="round"
+                 stroke-miterlimit="50" stroke-width="3" xlink:href="#f001c"/>
+        </g>
+        <g transform="translate(-1022 -985)">
+            <use fill="#fff" fill-opacity="0" stroke="#f37321" stroke-linecap="round" stroke-linejoin="round"
+                 stroke-miterlimit="50" stroke-width="3" xlink:href="#f001d"/>
+        </g>
+        <g transform="translate(-1022 -985)">
+            <use fill="#fff" fill-opacity="0" stroke="#f37321" stroke-linecap="round" stroke-linejoin="round"
+                 stroke-miterlimit="50" stroke-width="3" xlink:href="#f001e"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,125 @@
+.home-socials {
+ padding: 60px 0 30px;
+
+ .main-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+ }
+}
+
+.home-socials-intro {
+ padding-left: 30px;
+}
+
+.home-socials-col {
+ width: 350px;
+
+ &.home-socials-col--1 {
+
+  .home-socials-list {
+   margin-top: 90px;
+  }
+ }
+ &.home-socials-col--2 {
+
+  .home-socials-list {
+   margin-top: 17px;
+  }
+ }
+ &.home-socials-col--3 {
+
+  .home-socials-list {
+   margin-top: -173px;
+  }
+ }
+}
+
+.home-socials-list {
+
+}
+
+.home-socials-item {
+ width: 350px;
+ height: 350px;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ background: no-repeat center / cover;
+ padding: 30px;
+ margin-bottom: 30px;
+ position: relative;
+ &:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+ }
+ &:last-child {
+  margin-bottom: 0;
+ }
+
+ .home-socials-item__icon {
+  width: 24px;
+  height: 24px;
+  background: no-repeat center / contain;
+  position: absolute;
+  top: 30px;
+  right: 32px;
+  z-index: 2;
+ }
+
+ .home-socials-item__date {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 29px;
+  position: relative;
+  z-index: 2;
+ }
+ .home-socials-item__text {
+  flex: 1;
+  color: #ffffff;
+  margin-top: 25px;
+  position: relative;
+  z-index: 2;
+
+  > a {
+   color: #f37321;
+   font-weight: 700;
+  }
+ }
+
+ .home-socials-item__info {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  position: relative;
+  z-index: 2;
+
+  .home-socials-item__info-item {
+   display: flex;
+   align-items: center;
+   margin-right: 20px;
+   &:last-child {
+    margin-right: 0;
+   }
+
+   .home-socials-item__info-item-icon {
+    width: 17px;
+    height: 17px;
+    background: no-repeat center / contain;
+    margin-right: 6px;
+   }
+   .home-socials-item__info-item-text {
+    color: #ffffff;
+    font-size: 13px;
+   }
+
+   &.home-socials-item__info-item--comments .home-socials-item__info-item-icon {background-image: url(../img/common/comments-icon.svg)}
+   &.home-socials-item__info-item--likes .home-socials-item__info-item-icon {background-image: url(../img/common/like-icon.svg)}
+  }
+ }
+}

@@ -1,0 +1,66 @@
+section.home-clients
+  .main-wrapper
+    .home-clients-intro
+      h3.home-clients__subtitle.subtitle Clients
+      h2.home-clients__title.title-2.title-line Featured Success Stories
+
+    .home-clients-box
+      ul.home-clients-nav
+        li(data-client-nav="1").home-clients-nav-item.home-clients-nav-item--active
+          .home-clients-nav-item__photo(style="background-image: url(img/home/clients/home-client-photo.jpg)")
+          h2.home-clients-nav-item__name Name<br> Surname
+        li(data-client-nav="2").home-clients-nav-item
+          .home-clients-nav-item__photo(style="background-image: url(img/home/clients/home-client-photo.jpg)")
+          h2.home-clients-nav-item__name Name<br> Surname
+        li(data-client-nav="3").home-clients-nav-item
+          .home-clients-nav-item__photo(style="background-image: url(img/home/clients/home-client-photo.jpg)")
+          h2.home-clients-nav-item__name Name<br> Surname
+      ul.home-clients-list
+        li(data-client-item="1").home-clients-item.home-clients-item--active
+          .home-clients-item__left
+            .home-clients-item__photo(style="background-image: url(img/home/clients/home-client-photo.jpg)")
+            .home-clients-item__info
+              h2.text-white.title-4.home-clients-item__name Name Surname
+              h3.text-white.home-clients-item__position CO-FOUNDER/DEVELOPER
+              a(href="#").btn-arrow-2.home-clients-item__link LinkedIn
+          .home-clients-item__right
+            h2.text-white.title-3.home-clients-item__title Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            p.home-clients-item__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        li(data-client-item="2").home-clients-item
+          .home-clients-item__left
+            .home-clients-item__photo(style="background-image: url(img/home/clients/home-client-photo.jpg)")
+            .home-clients-item__info
+              h2.text-white.title-4.home-clients-item__name Name Surname
+              h3.text-white.home-clients-item__position CO-FOUNDER/DEVELOPER
+              a(href="#").btn-arrow-2.home-clients-item__link LinkedIn
+          .home-clients-item__right
+            h2.text-white.title-3.home-clients-item__title Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            p.home-clients-item__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        li(data-client-item="3").home-clients-item
+          .home-clients-item__left
+            .home-clients-item__photo(style="background-image: url(img/home/clients/home-client-photo.jpg)")
+            .home-clients-item__info
+              h2.text-white.title-4.home-clients-item__name Name Surname
+              h3.text-white.home-clients-item__position CO-FOUNDER/DEVELOPER
+              a(href="#").btn-arrow-2.home-clients-item__link LinkedIn
+          .home-clients-item__right
+            h2.text-white.title-3.home-clients-item__title Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            p.home-clients-item__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+
+script.
+  $(function(){
+    $('.home-clients-nav-item').click(function(){
+      if(!$(this).hasClass('home-clients-nav-item--active')) {
+        var clientItemNumber = $(this).attr('data-client-nav');
+        var $clientItem = $(".home-clients-item[data-client-item='" + clientItemNumber +"']");
+        $('.home-clients-nav-item--active').removeClass('home-clients-nav-item--active');
+        $(this).addClass('home-clients-nav-item--active');
+
+        $('.home-clients-item--active').fadeOut(400, function(){
+          $(this).removeClass('home-clients-item--active');
+          $clientItem.addClass('home-clients-item--active');
+        })
+      }
+    });
+  });

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="101" height="101"
+     viewBox="0 0 101 101">
+    <defs>
+        <path id="kjdab" d="M856.5 3185.91a7.07 7.07 0 1 0-5 2.07"/>
+        <path id="kjdac"
+              d="M846.68 3163.4a36.58 36.58 0 0 0 15.09-1.16 44.73 44.73 0 0 1 4.56 20.27c0 12.5-3.13 23.38-7.73 29a31.15 31.15 0 0 1-14.2 0c-4.6-5.6-7.73-16.48-7.73-29 0-23 14.83-33 14.83-33a32 32 0 0 1 7.41 7.87"/>
+        <path id="kjdad"
+              d="M870.79 3193.47c2.76 2.8 5.05 6 6.78 9.53a41.48 41.48 0 0 0-14.06-1.15 31.37 31.37 0 0 1-24 0 41.48 41.48 0 0 0-14.08 1.15 36.48 36.48 0 0 1 6.78-9.56"/>
+        <path id="kjdae" d="M851.5 3216.78v8.72"/>
+        <path id="kjdaf" d="M858.57 3216.78v8.06"/>
+        <path id="kjdag" d="M844.43 3216.78v8.06"/>
+    </defs>
+    <g>
+        <g transform="translate(-801 -3137)">
+            <use fill="#fff" fill-opacity="0" stroke="#f37321" stroke-linecap="round" stroke-linejoin="round"
+                 stroke-miterlimit="50" stroke-width="3" xlink:href="#kjdab"/>
+        </g>
+        <g transform="translate(-801 -3137)">
+            <use fill="#fff" fill-opacity="0" stroke="#f37321" stroke-linecap="round" stroke-linejoin="round"
+                 stroke-miterlimit="50" stroke-width="3" xlink:href="#kjdac"/>
+        </g>
+        <g transform="translate(-801 -3137)">
+            <use fill="#fff" fill-opacity="0" stroke="#f37321" stroke-linecap="round" stroke-linejoin="round"
+                 stroke-miterlimit="50" stroke-width="3" xlink:href="#kjdad"/>
+        </g>
+        <g transform="translate(-801 -3137)">
+            <use fill="#fff" fill-opacity="0" stroke="#f37321" stroke-linecap="round" stroke-linejoin="round"
+                 stroke-miterlimit="50" stroke-width="3" xlink:href="#kjdae"/>
+        </g>
+        <g transform="translate(-801 -3137)">
+            <use fill="#fff" fill-opacity="0" stroke="#f37321" stroke-linecap="round" stroke-linejoin="round"
+                 stroke-miterlimit="50" stroke-width="3" xlink:href="#kjdaf"/>
+        </g>
+        <g transform="translate(-801 -3137)">
+            <use fill="#fff" fill-opacity="0" stroke="#f37321" stroke-linecap="round" stroke-linejoin="round"
+                 stroke-miterlimit="50" stroke-width="3" xlink:href="#kjdag"/>
+        </g>
+    </g>
+</svg>
