@@ -1,0 +1,26 @@
+#popup-exit.popup-layout
+  .popup-scrollarea
+    .popup.popup-exit
+      .popup__close
+      h2.title-4.popup-exit__title Leaving so soon?
+      p.text-muted.popup-exit__text Maybe you will be interested in virtual training and simulations market news and e-books? Just leave your email and we will keep you up to date with all market trends.
+
+      .popup-exit-form
+        .formgroup.popup-exit-formgroup
+          input(type="text" placeholder="EMAIL ADDRESS")
+        button(type="submit").popup-exit-form__submit.btn
+          span SIGN UP
+
+      p.popup-exit__disclaimer Your email will never be published or transferred to third parties
+
+
+script.
+  $(function(){
+    $("html").bind("mouseleave", function () {
+      if($.cookie('exitPopupShowed') != 'true'){
+        showPopup('#popup-exit');
+        $.cookie('exitPopupShowed', 'true');
+        $("html").unbind("mouseleave");
+      }
+    });
+  });

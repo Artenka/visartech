@@ -1,0 +1,25 @@
+.popup-exit {
+ width: 410px;
+
+ .popup-exit__text {
+  padding-right: 30px;
+  margin-top: 20px;
+ }
+
+ .popup-exit__disclaimer {
+  background: url(../img/common/checkbox-icon.svg) no-repeat top 5px left;
+  color: rgba(55,55,55,0.6);
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: 17px;
+  padding: 0 100px 0 23px;
+ }
+}
+
+.popup-exit-form {
+ margin-top: 30px;
+
+ .popup-exit-form__submit {
+  margin-top: 40px;
+ }
+}
