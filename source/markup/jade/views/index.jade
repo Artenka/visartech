@@ -7,7 +7,7 @@ block contents
       .intro-main
         h2.intro-main__subtitle.subtitle.text-white Welcome
         h1.intro-main__title.title.title-line.text-white Open our world<br> of visual training<br> and simulations
-        .intro-main__video-btn
+        .intro-main__video-btn(onclick="playShowreel();")
           .intro-main__video-btn-icon
           p.intro-main__video-btn-text PLAY SHOWREEL
       .link-smooth.intro-next(data-href=".main")
@@ -24,3 +24,4 @@ block contents
     include ../partials/contacts
 
   include ../partials/footer
+  include ../partials/popups/popup-showreel
