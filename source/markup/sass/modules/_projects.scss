@@ -1,3 +1,10 @@
+#projects-header {
+
+ .main-header-submenu-layout.main-header-submenu-layout--projects {
+  @extend .main-header-submenu-layout-active;
+ }
+}
+
 #projects {
  padding: 60px 0 0;
  margin-bottom: -40px;

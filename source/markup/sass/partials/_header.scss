@@ -73,10 +73,13 @@
  transition: 0.5s;
  z-index: 10;
  &:hover {
-  top: 25px;
-  opacity: 1;
-  visibility: visible;
+  @extend .main-header-submenu-layout-active;
  }
+}
+.main-header-submenu-layout-active {
+ top: 25px;
+ opacity: 1;
+ visibility: visible;
 }
 
 .main-header-submenu {

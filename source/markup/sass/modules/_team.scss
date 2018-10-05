@@ -1,3 +1,10 @@
+#team-header {
+
+ .main-header-submenu-layout.main-header-submenu-layout--team {
+  @extend .main-header-submenu-layout-active;
+ }
+}
+
 #team {
  padding: 0 0 40px;
  margin-top: -110px;
