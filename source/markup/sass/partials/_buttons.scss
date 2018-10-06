@@ -9,6 +9,11 @@
  padding: 27px 62px;
  overflow: hidden;
  position: relative;
+ @include mobile {
+  font-size: 15px;
+  letter-spacing: 1.8px;
+  padding: 22px 40px;
+ }
  &:before {
   content: '';
   width: 100%;
@@ -33,6 +38,9 @@
 
  &.btn--md {
   padding: 27px 25px;
+  @include mobile {
+   padding: 22px 20px;
+  }
  }
  &.btn--white {
   border-color: #fff;
@@ -55,6 +63,12 @@
  letter-spacing: 2.14px;
  padding: 3px 0 4px 47px;
  transition: 0.5s;
+ @include mobile {
+  font-size: 15px;
+  letter-spacing: 1.8px;
+  background-size: 24px;
+  padding: 3px 0 4px 35px;
+ }
  &:hover {
   color: #f37321;
  }

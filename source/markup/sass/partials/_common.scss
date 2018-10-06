@@ -10,6 +10,9 @@
 
  &.title-line {
   padding-top: 21px;
+  @include mobile {
+   padding-top: 16px;
+  }
  }
 }
 
@@ -25,6 +28,9 @@
 
  &.title-line {
   padding-top: 18px;
+  @include mobile {
+   padding-top: 14px;
+  }
  }
 }
 
@@ -67,9 +73,15 @@
 
  & ~ .title.title-line {
   margin-top: 27px;
+  @include mobile {
+   margin-top: 20px;
+  }
  }
  & ~ .title-2.title-line {
   margin-top: 22px;
+  @include mobile {
+   margin-top: 16px;
+  }
  }
 }
 .subtitle-2 {
