@@ -4,6 +4,10 @@
  padding: 30px 0 60px;
 
  .main-header-menu {
+  @include mobile {
+   order: 1;
+   margin-top: 20px;
+  }
 
   .main-header-menu__item {
    color: rgba(255,255,255,0.6);
@@ -25,10 +29,16 @@
  display: flex;
  align-items: center;
  justify-content: space-between;
+ @include mobile {
+  flex-direction: column;
+ }
 }
 
 .main-footer-bottom {
  margin-top: 27px;
+ @include tablet {
+  flex-direction: column;
+ }
 }
 
 .main-footer-logo {
@@ -36,11 +46,18 @@
  height: 93px;
  display: block;
  background: url(../img/logo-2.svg) no-repeat center / contain;
+ @include mobile {
+  width: 140px;
+  height: 64px;
+ }
 }
 
 .main-footer-socials {
  display: flex;
  align-items: center;
+ @include mobile {
+  margin-top: 25px;
+ }
 
  .main-footer-socials__item {
   width: 24px;
@@ -65,5 +82,13 @@
 
 .main-footer-text {
  color: rgba(255,255,255,0.6);
+ @include tablet {
+  margin: 25px 0;
+ }
+ @include mobile {
+  order: 2;
+  font-size: 12px;
+  margin-top: 30px;
+ }
 }
 

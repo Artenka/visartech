@@ -10,6 +10,9 @@ body {
  overflow-x: hidden;
  -webkit-font-smoothing: antialiased;
  -moz-osx-font-smoothing: grayscale;
+ @include mobile {
+  font-size: 14px;
+ }
 }
 
 .main-wrapper {
@@ -27,6 +30,9 @@ body {
  flex: 1 0 auto;
  overflow-x: hidden;
  padding: 60px 0;
+ @include mobile {
+  padding: 40px 0;
+ }
 }
 
 .br-lg {

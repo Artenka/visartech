@@ -1,63 +1,23 @@
 header.main-header
   .main-wrapper
     a(href="/").main-header__logo
-    ul.main-header-menu
-      li.main-header-menu__item.main-header-menu__item--active
-        a(href="#").main-header-menu__item-link Home
-      li.main-header-menu__item
-        a(href="#").main-header-menu__item-link About
-      li.main-header-menu__item
-        a(href="#").main-header-menu__item-link Team
-        .main-header-submenu-layout.main-header-submenu-layout--team
-          .main-header-submenu
-            a(href="#").main-header-submenu__item.main-header-submenu__item--active
-              .main-header-submenu__item-icon(style="background-image: url(img/common/header/team-menu-item-1.svg)")
-              p.main-header-submenu__item-name Core
-            a(href="#").main-header-submenu__item
-              .main-header-submenu__item-icon(style="background-image: url(img/common/header/team-menu-item-2.svg)")
-              p.main-header-submenu__item-name Leaders
-            a(href="#").main-header-submenu__item
-              .main-header-submenu__item-icon(style="background-image: url(img/common/header/team-menu-item-3.svg)")
-              p.main-header-submenu__item-name Developers
-            a(href="#").main-header-submenu__item
-              .main-header-submenu__item-icon(style="background-image: url(img/common/header/team-menu-item-4.svg)")
-              p.main-header-submenu__item-name QA
-            a(href="#").main-header-submenu__item
-              .main-header-submenu__item-icon(style="background-image: url(img/common/header/team-menu-item-5.svg)")
-              p.main-header-submenu__item-name Administrative
-      li.main-header-menu__item
-        a(href="#").main-header-menu__item-link Projects
-        .main-header-submenu-layout.main-header-submenu-layout--projects
-          .main-header-submenu.main-header-submenu--projects
-            a(href="#").main-header-submenu__item.main-header-submenu__item--active
-              .main-header-submenu__item-icon(style="background-image: url(img/common/header/projects-menu-item-1.svg)")
-              p.main-header-submenu__item-name Automotive
-            a(href="#").main-header-submenu__item
-              .main-header-submenu__item-icon(style="background-image: url(img/common/header/projects-menu-item-2.svg)")
-              p.main-header-submenu__item-name Education
-            a(href="#").main-header-submenu__item
-              .main-header-submenu__item-icon(style="background-image: url(img/common/header/projects-menu-item-3.svg)")
-              p.main-header-submenu__item-name Energy<br>&Utilities
-            a(href="#").main-header-submenu__item
-              .main-header-submenu__item-icon(style="background-image: url(img/common/header/projects-menu-item-4.svg)")
-              p.main-header-submenu__item-name Healthcare
-            a(href="#").main-header-submenu__item
-              .main-header-submenu__item-icon(style="background-image: url(img/common/header/projects-menu-item-5.svg)")
-              p.main-header-submenu__item-name Sports
-            a(href="#").main-header-submenu__item
-              .main-header-submenu__item-icon(style="background-image: url(img/common/header/projects-menu-item-6.svg)")
-              p.main-header-submenu__item-name Latest
-      li.main-header-menu__item
-        a(href="#").main-header-menu__item-link Blog
-      li.main-header-menu__item
-        a(href="#").main-header-menu__item-link Contact Us
+    include header-menu
+    .hamburger.hamburger--vortex.js-hamburger
+      .hamburger-box
+        .hamburger-inner
 
 
 script.
-  $(function(){
-    $('.main-header-submenu__item').hover(function(){
+  $(function() {
+    $('.main-header-submenu__item').hover(function () {
       $('.main-header-submenu__item-name').css({opacity: 1, marginTop: '8px'});
-    }, function(){
+    }, function () {
       $('.main-header-submenu__item-name').css({opacity: 0, marginTop: '-24px'});
+    });
+
+    // hamburger toggle
+    $('.hamburger').click(function(){
+      $(this).toggleClass('is-active');
+      $('.main-header-menu-layout').slideToggle(400);
     });
   });
