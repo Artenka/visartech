@@ -8,6 +8,9 @@
 #team {
  padding: 0 0 40px;
  margin-top: -110px;
+ @include mobile {
+  margin-top: -30px;
+ }
 }
 
 .team-list {
@@ -23,6 +26,13 @@
  position: relative;
  overflow: hidden;
  cursor: pointer;
+ @include tablet {
+  margin-right: 10px;
+ }
+ @include mobile {
+  width: 100%;
+  margin: 0 0 20px;
+ }
  &:hover {
 
   .team-item__block {
@@ -41,6 +51,14 @@
  }
  &:nth-child(3n+3) {
   margin-right: 0;
+  @include tablet {
+   margin-right: 10px;
+  }
+ }
+ &:nth-child(2n+2) {
+  @include tablet {
+   margin-right: 0;
+  }
  }
 
  .team-item__block {
