@@ -1,20 +1,36 @@
 #project {
  padding: 60px 0 0;
+ @include mobile {
+  padding-top: 40px;
+ }
 
  .contacts {
   margin-top: -90px;
+  @include mobile {
+   margin-top: -20px;
+  }
  }
 }
 
 .project-entry {
  padding: 0 65px 40px 30px;
  position: relative;
+ @include mobile {
+  padding: 0 0 20px;
+ }
  &:before {
   @extend .grey-line;
   content: '';
   height: calc(100% - 80px);
   bottom: 0;
   left: 0;
+  @include tablet {
+   height: calc(100% - 72px);
+  }
+  @include mobile {
+   height: calc(100% - 60px);
+   left: -26px;
+  }
  }
 }
 
@@ -22,12 +38,21 @@
  display: flex;
  align-items: flex-start;
  justify-content: space-between;
+ @include tablet-mobile {
+  flex-direction: column;
+ }
 
  .project-row-1__left, .project-row-2__left {
   width: 350px;
+  @include tablet-mobile {
+   width: 100%;
+  }
  }
  .project-row-1__right, .project-row-2__right {
   width: 570px;
+  @include tablet-mobile {
+   width: 100%;
+  }
  }
 }
 
@@ -35,6 +60,12 @@
 
  .project-row-1__right {
   padding-top: 90px;
+  @include tablet {
+   padding: 40px 50px 0 0;
+  }
+  @include mobile {
+   padding-top: 30px;
+  }
  }
 
  .project-row-1__text {
@@ -44,9 +75,15 @@
 
 .project-row-2 {
  margin-top: 20px;
+ @include tablet-mobile {
+  margin-top: 50px;
+ }
 
  .project-row-2__headline {
   margin-top: 22px;
+  @include mobile {
+   margin-top: 40px;
+  }
  }
  .project-row-2__text {
   margin-top: 10px;
@@ -63,6 +100,15 @@
  position: relative;
  top: 0;
  left: 0;
+ @include tablet-mobile {
+  width: 100%;
+ }
+ @include mobile {
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 25px 20px 0;
+  margin-top: 20px;
+ }
 
  .project-row-2-technologies__item {
   width: 104px;
@@ -72,6 +118,11 @@
   transition: 0.7s;
   cursor: pointer;
   position: relative;
+  @include mobile {
+   width: 82px;
+   padding: 10px 0;
+   margin: 0 20px 20px;
+  }
   &:before {
    content: '';
    width: calc(100% - 36px);
@@ -92,6 +143,9 @@
   }
   &:last-child {
    margin-right: 0;
+   @include mobile {
+    margin-right: 20px;
+   }
   }
 
   .project-row-2-technologies__item-icon {
@@ -111,6 +165,9 @@
   top: -242px;
   left: -275px;
   z-index: -1;
+  @include tablet-mobile {
+   display: none;
+  }
  }
 
  img, iframe {
@@ -124,12 +181,18 @@
 .project-author {
  padding-top: 80px;
  position: relative;
+ @include mobile {
+  padding-top: 20px;
+ }
  &:before {
   @extend .grey-line;
   content: '';
   height: 360px;
   top: 0;
   left: 0;
+  @include mobile {
+   display: none;
+  }
  }
 }
 
@@ -140,10 +203,20 @@
  position: absolute;
  top: 30px;
  right: 0;
+ @include tablet {
+  width: 300px;
+ }
+ @include mobile {
+  width: 100%;
+  position: static;
+ }
 
  h3 {
   font-weight: 500;
   margin-top: 10px;
+  @include mobile {
+   margin-top: 0;
+  }
  }
 }
 
@@ -152,6 +225,14 @@
  height: 470px;
  background: no-repeat center / cover;
  margin: 0 auto;
+ @include tablet {
+  width: 520px;
+  height: 335px;
+ }
+ @include mobile {
+  width: 100%;
+  height: 200px;
+ }
 }
 
 .project-author-about {
@@ -161,6 +242,19 @@
  margin-top: -170px;
  position: relative;
  left: calc(555px - 50vw);
+ @include tablet-mobile {
+  left: 0;
+ }
+ @include tablet {
+  width: 420px;
+  padding: 30px 30px 50px 30px;
+  margin-top: -150px;
+ }
+ @include mobile {
+  width: 100%;
+  margin-top: 0;
+  padding: 30px;
+ }
 
  p {
   margin-top: 20px;
@@ -176,11 +270,24 @@
  position: relative;
  top: 0;
  left: 0;
+ @include tablet-mobile {
+  width: 100%;
+  padding: 30px 50px;
+ }
+ @include mobile {
+  flex-direction: column;
+  padding: 20px 30px 30px;
+ }
 
  .fill-brief__title {
   flex: 1;
+  @include mobile {
+   text-align: center;
+  }
  }
  .fill-brief__btn {
-
+  @include mobile {
+   margin-top: 20px;
+  }
  }
 }
