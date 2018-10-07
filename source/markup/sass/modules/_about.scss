@@ -6,12 +6,24 @@
  display: flex;
  justify-content: space-between;
  padding: 0 65px 0 30px;
+ @include tablet-mobile {
+  flex-direction: column;
+ }
+ @include mobile {
+  padding: 0;
+ }
 
  .about-row-1__left, .about-row-2__left {
   width: 415px;
+  @include tablet-mobile {
+   width: 100%;
+  }
  }
  .about-row-1__right, .about-row-2__right {
   width: 570px;
+  @include tablet-mobile {
+   width: 100%;
+  }
  }
 }
 
@@ -23,6 +35,9 @@
   height: calc(100% - 18px);
   top: 9px;
   left: 0;
+  @include mobile {
+   left: -24px;
+  }
  }
 }
 
@@ -32,15 +47,31 @@
  .about-row-1__text {
   margin-top: 10px;
  }
+
+ .about-row-1__right {
+  @include tablet {
+   margin-top: 40px;
+  }
+  @include mobile {
+   margin-top: 20px;
+  }
+ }
 }
 
 .about-row-2 {
  align-items: flex-end;
  margin-top: 40px;
+ @include mobile {
+  margin-top: 20px;
+ }
 
  .about-row-2__box {
   width: calc(50vw + 80px);
   padding: 40px 65px 30px;
+  @include mobile {
+   width: 100%;
+   padding: 30px 40px;
+  }
  }
 
  .about-row-2__subtitle {
@@ -51,12 +82,32 @@
 
  .about-row-2__text {
   margin-top: 20px;
+  @include mobile {
+   font-size: 14px;
+   line-height: 20px;
+   margin-top: 10px;
+  }
+ }
+
+ .about-row-2__left {
+  @include tablet-mobile {
+   order: 2;
+   margin-top: 40px;
+  }
+ }
+ .about-row-2__right {
+  @include tablet-mobile {
+   order: 1;
+  }
  }
 }
 
 
 .about-vision {
  margin-top: 60px;
+ @include mobile {
+  margin-top: 40px;
+ }
 }
 
 .about-vision-list {
@@ -68,6 +119,12 @@
  align-items: flex-start;
  padding-right: 95px;
  margin-bottom: 40px;
+ @include tablet-mobile {
+  padding-right: 0;
+ }
+ @include mobile {
+  flex-wrap: wrap;
+ }
  &:last-child {
   margin-bottom: 0;
  }
@@ -80,11 +137,23 @@
   line-height: 120px;
   text-align: right;
   margin-right: 45px;
+  @include tablet-mobile {
+   width: 50px;
+   font-size: 80px;
+   line-height: 80px;
+   margin-right: 20px;
+  }
  }
  .about-vision-item__content {
   flex: 1;
   padding-top: 10px;
   margin-right: 100px;
+  @include tablet {
+   margin-right: 50px;
+  }
+  @include mobile {
+   margin: 0;
+  }
 
   > p {
    margin-top: 20px;
@@ -95,6 +164,14 @@
   height: 154px;
   background: no-repeat center / contain;
   margin-top: 55px;
+  @include tablet {
+   width: 100px;
+   height: 100px;
+   margin-top: 90px;
+  }
+  @include mobile {
+   display: none;
+  }
  }
 }
 
@@ -103,20 +180,28 @@
  padding-left: 30px;
  margin-top: 50px;
  position: relative;
+ @include mobile {
+  padding-left: 0;
+ }
  &:before {
+  @extend .grey-line;
   content: '';
-  width: 4px;
   height: calc(100% - 45px);
-  background: rgba(55,55,55,0.3);
-  position: absolute;
   top: 2px;
   left: 0;
+  @include mobile {
+   height: calc(100% - 20px);
+   left: -24px;
+  }
  }
 }
 
 .about-faq-list {
  padding-left: 35px;
  margin-top: 32px;
+ @include tablet-mobile {
+  padding-left: 0;
+ }
 }
 
 .about-faq-item {
@@ -126,6 +211,10 @@
  transition: 0.5s;
  position: relative;
  cursor: pointer;
+ @include mobile {
+  flex-direction: column;
+  padding: 18px 30px;
+ }
  &:before {
   content: '';
   width: 26px;
@@ -149,13 +238,13 @@
 
  .about-faq-item__content {
   flex: 1;
+  @include mobile {
+   margin-top: 10px;
+  }
  }
 
  .about-faq-item__title {
-  color: #373737;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 33px;
+  @extend .title-4;
   transition: 0.5s;
  }
  .about-faq-item__text {
@@ -163,6 +252,9 @@
   color: rgba(255,255,255,0.6);
   padding-right: 290px;
   margin-top: 20px;
+  @include tablet-mobile {
+   padding-right: 0;
+  }
  }
 
  &.about-faq-item--active {
