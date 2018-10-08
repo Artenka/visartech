@@ -25,6 +25,9 @@
  background-color: #ffffff;
  padding: 60px 31px 30px;
  position: relative;
+ @include mobile {
+  padding: 40px 20px 20px;
+ }
 
  .popup__close {
   width: 40px;
@@ -34,5 +37,8 @@
   top: -50px;
   right: -50px;
   cursor: pointer;
+  @include mobile {
+   right: 0;
+  }
  }
 }

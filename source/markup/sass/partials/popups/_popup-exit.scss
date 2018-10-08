@@ -1,5 +1,8 @@
 .popup-exit {
  width: 410px;
+ @include mobile {
+  width: 290px;
+ }
 
  .popup-exit__text {
   padding-right: 30px;
@@ -13,6 +16,9 @@
   line-height: 18px;
   margin-top: 17px;
   padding: 0 100px 0 23px;
+  @include mobile {
+   padding: 0 0 0 20px;
+  }
  }
 }
 
