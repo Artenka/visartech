@@ -17,10 +17,16 @@
    position: absolute;
    top: calc(50% - 1px);
    left: -68px;
+   @include mobile {
+    display: none;
+   }
   }
  }
 
  .contacts {
   margin-top: -160px;
+  @include mobile {
+   margin-top: 0;
+  }
  }
 }

@@ -1,10 +1,16 @@
 .home-projects {
  margin-top: 60px;
+ @include mobile {
+  margin-top: 40px;
+ }
 }
 
 .home-projects-intro {
  padding-left: 30px;
  position: relative;
+ @include mobile {
+  padding-left: 0;
+ }
  &:before {
   @extend .grey-line;
   content: '';
@@ -12,6 +18,13 @@
   position: absolute;
   top: 83px;
   left: 0;
+  @include tablet {
+   height: 84px;
+   top: 72px;
+  }
+  @include mobile {
+   display: none;
+  }
  }
 }
 
@@ -21,6 +34,11 @@
  position: relative;
  padding: 32px 68px;
  margin: -68px 0 0 -68px;
+ @include mobile {
+  width: 100%;
+  padding: 25px 45px;
+  margin: 10px 0 0;
+ }
 }
 
 .projects-btn {
