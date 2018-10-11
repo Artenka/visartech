@@ -69,8 +69,16 @@
 
 }
 
-.home-clients-item {
+.home-clients-item-layout {
  display: none;
+
+ &.home-clients-item-layout--active {
+  display: block;
+ }
+}
+
+.home-clients-item {
+ display: flex;
  align-items: flex-start;
  @include mobile {
   flex-direction: column;
@@ -190,10 +198,6 @@
  .home-clients-item__text {
   color: rgba(255,255,255,0.8);
   margin-top: 20px;
- }
-
- &.home-clients-item--active {
-  display: flex!important;
  }
 }
 

@@ -28,6 +28,10 @@
 
 .home-socials-col {
  width: 350px;
+ position: relative;
+ @include tablet-mobile {
+  position: static;
+ }
  @include mobile {
   width: 100%;
  }

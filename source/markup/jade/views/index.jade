@@ -25,3 +25,24 @@ block contents
 
   include ../partials/footer
   include ../partials/popups/popup-showreel
+
+  script.
+    $(function(){
+      var $window = $(window);
+      var $benefitsCol1 = $('.home-benefits-col--1');
+      var $benefitsCol2 = $('.home-benefits-col--2');
+      var $benefitsCol2Square = $('.home-benefits-col--2 .home-benefits-col__square');
+      var $socialsCol2 = $('.home-socials-col--2');
+      var $socialsCol3 = $('.home-socials-col--3');
+      if ($window.width() > 1240) {
+        $window.scroll(function () {
+          $benefitsCol1.css({top: $window.scrollTop() / 20});
+          $benefitsCol2.css({top: -($window.scrollTop() / 20)});
+
+          $benefitsCol2Square.css({top: ($window.scrollTop() / 10 - 100)});
+
+          $socialsCol2.css({top: -($window.scrollTop() / 20) + 220});
+          $socialsCol3.css({top: $window.scrollTop() / 20 - 220});
+        });
+      }
+    });
