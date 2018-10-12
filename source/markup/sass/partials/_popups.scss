@@ -8,6 +8,11 @@
  left: 0;
  overflow: hidden;
  z-index: 999;
+
+ &.popup-layout--white {
+  background: #fafafa;
+  //background: #979797;
+ }
 }
 
 .popup-scrollarea {
