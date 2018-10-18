@@ -9,16 +9,21 @@
    margin-top: 20px;
   }
 
-  .main-header-menu__item {
-   color: rgba(255,255,255,0.6);
-   &:hover {
-    color: #fff;
+  .main-header-menu__item, .menu-item {
+
+   .main-header-menu__item-link, > a {
+    color: rgba(255,255,255,0.6);
+    &:hover {
+     color: #fff;
+    }
    }
 
    &.main-header-menu__item--active {
-    &:before {
-     top: auto;
-     bottom: -9px;
+
+    .main-header-menu__item-link, > a {
+     &:before {
+      display: none;
+     }
     }
    }
   }

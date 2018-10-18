@@ -269,7 +269,7 @@ b, strong {
  font-weight: 700;
 }
 
-input, textarea, select, .input, .textarea, .select {
+input:not([type=submit]), textarea, select, .input, .textarea, .select {
  width: 100%;
  display: block;
  border-radius: 0;

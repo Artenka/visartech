@@ -10,6 +10,8 @@
  padding: 27px 62px;
  overflow: hidden;
  position: relative;
+ cursor: pointer;
+ transition: 0.7s;
  @include mobile {
   font-size: 15px;
   letter-spacing: 1.8px;
@@ -26,15 +28,21 @@
   transition: 0.7s;
  }
  &:hover {
-  color: #fff;
+
+  &, span, .span {
+   color: #fff;
+  }
+
   &:before {
    left: 0;
   }
  }
 
- span {
+ span, .span {
   position: relative;
   z-index: 2;
+  cursor: pointer;
+  transition: 0.7s;
  }
 
  &.btn--md {
@@ -50,7 +58,10 @@
    background: #fff;
   }
   &:hover {
-   color: #373737;
+
+   &, span, .span {
+    color: #373737;
+   }
   }
  }
 }

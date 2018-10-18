@@ -12,6 +12,16 @@
  }
 }
 
+.home-agency__title {
+ padding-right: 600px;
+ @include tablet {
+  padding-right: 200px;
+ }
+ @include mobile {
+  padding-right: 0;
+ }
+}
+
 .home-agency-list {
  display: flex;
  flex-wrap: wrap;

@@ -40,15 +40,15 @@
 
  .main-header-menu {
 
-  .main-header-menu__item {
+  .main-header-menu__item, .menu-item {
    &:hover {
 
-    .main-header-menu__item-link {
+    .main-header-menu__item-link, > a {
      color: #fff;
     }
    }
 
-   .main-header-menu__item-link {
+   .main-header-menu__item-link, > a {
     color: #fff;
    }
 
@@ -113,6 +113,19 @@
    @include mobile {
     flex-direction: column;
     padding: 40px 0 80px;
+   }
+  }
+ }
+
+ &.intro--home {
+
+  .intro-main__title {
+   padding-right: 650px;
+   @include tablet {
+    padding-right: 300px;
+   }
+   @include mobile {
+    padding-right: 0;
    }
   }
  }

@@ -9,13 +9,19 @@ footer.main-footer
         a(href="#").main-footer-socials__item.main-footer-socials__item--in
     .main-footer-bottom
       p.main-footer-text Game changing innovations for you and the world
-      .main-header-menu
-        a(href="#").main-header-menu__item.main-header-menu__item--active Home
-        a(href="#").main-header-menu__item About
-        a(href="#").main-header-menu__item Team
-        a(href="#").main-header-menu__item Projects
-        a(href="#").main-header-menu__item Blog
-        a(href="#").main-header-menu__item Contact Us
+      ul.main-header-menu
+        li.main-header-menu__item.main-header-menu__item--active
+          a(href="#").main-header-menu__item-link Home
+        li.main-header-menu__item
+          a(href="#").main-header-menu__item-link About
+        li.main-header-menu__item
+          a(href="#").main-header-menu__item-link Team
+        li.main-header-menu__item
+          a(href="#").main-header-menu__item-link Projects
+        li.main-header-menu__item
+          a(href="#").main-header-menu__item-link Blog
+        li.main-header-menu__item
+          a(href="#").main-header-menu__item-link Contact Us
 
 include popups/spinner.jade
 include popups/popup-exit.jade

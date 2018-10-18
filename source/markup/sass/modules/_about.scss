@@ -67,7 +67,7 @@
 
  .about-row-2__box {
   width: calc(50vw + 80px);
-  padding: 40px 65px 30px;
+  padding: 40px calc(50vw - 555px + 65px) 30px 65px;
   @include mobile {
    width: 100%;
    padding: 30px 40px;

@@ -30,5 +30,8 @@ section.contacts
             option INDUSTRY
         .contacts-formgroup
           input(type="text" placeholder="MESSAGE")
-        button(type="submit").contacts-form__submit.btn.btn--md
-          span SEND MESSAGE
+        .contacts-form__submit.btn.btn--md
+          input.span(type="submit" value="SEND MESSAGE")
+
+        .wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok(style='display: block;', role='alert') Спасибо за Ваше сообщение. Оно успешно отправлено.
+
