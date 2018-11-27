@@ -9,9 +9,11 @@
 // partials scss files
 @import 'partials/common';
 @import 'partials/scroll';
+@import 'partials/up-btn';
 @import 'partials/popups';
 @import 'partials/popups/popup-showreel';
 @import 'partials/popups/popup-exit';
+@import 'partials/popups/popup-brief';
 @import 'partials/popups/spinner';
 @import 'partials/buttons';
 @import 'partials/header';
@@ -27,3 +29,4 @@
 @import 'modules/team';
 @import 'modules/projects';
 @import 'modules/project';
+@import 'modules/error-404';

@@ -1,0 +1,40 @@
+a(data-href="body").up-btn.link-smooth
+  .up-btn__circle
+  .up-btn__arrow
+
+script.
+  $(function(){
+    var $circle = $('.up-btn__circle');
+    $circle.circleProgress({
+      value: 0,
+      size: 46,
+      startAngle: 3*Math.PI/2,
+      thickness: 5,
+      fill: {gradient: ["#f37321", "#f37321"]},
+      animation: {duration: 700, easing: "linear"}
+    });
+
+    $(document).on('scroll', function() {
+      var distanceFromBottom = Math.floor($(document).height() - $(document).scrollTop() - $(window).height());
+
+      $circle.circleProgress('value', ($(document).scrollTop() + $(window).height() + 20)/ $(document).height());
+
+      if($(document).scrollTop() > 200) {
+        $('.up-btn').addClass('up-btn--active');
+      } else {
+        $('.up-btn').removeClass('up-btn--active');
+      }
+
+      if (distanceFromBottom < 100) {
+        $('.up-btn').addClass('up-btn--transparent');
+      } else {
+        $('.up-btn').removeClass('up-btn--transparent');
+      }
+
+      if (distanceFromBottom < 20) {
+        $('.up-btn').addClass('up-btn--finish');
+      } else {
+        $('.up-btn').removeClass('up-btn--finish');
+      }
+    });
+  });

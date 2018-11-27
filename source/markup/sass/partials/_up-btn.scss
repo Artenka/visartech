@@ -1,0 +1,62 @@
+.up-btn {
+ width: 58px;
+ height: 58px;
+ border-radius: 50%;
+ background: #fff;
+ padding: 6px;
+ position: fixed;
+ bottom: 48px;
+ right: calc(50vw - 639px);
+ z-index: 50;
+ transition: 1s;
+ opacity: 0;
+ @include tablet-mobile {
+  display: none;
+ }
+
+ svg {
+  width: 100%;
+  height: 100%;
+ }
+
+ .up-btn__circle {
+
+ }
+
+ .up-btn__arrow {
+  width: 14px;
+  height: 16px;
+  background: url(../img/common/up-btn-arrow.svg) no-repeat center / contain;
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 8px);
+ }
+
+ &.up-btn--finish {
+
+  .up-btn__arrow {
+   animation: up-btn-arrow-animation 2s infinite;
+  }
+ }
+ &.up-btn--transparent {
+  background: #373737;
+ }
+ &.up-btn--active {
+  opacity: 1;
+ }
+}
+
+@keyframes up-btn-arrow-animation {
+ 0% {
+  top: calc(50% - 8px);
+ }
+ 40% {
+  top: calc(50% - 11px);
+ }
+ 80% {
+  top: calc(50% - 8px);
+ }
+ 100% {
+  top: calc(50% - 8px);
+ }
+}

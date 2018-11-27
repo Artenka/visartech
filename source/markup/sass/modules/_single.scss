@@ -66,10 +66,19 @@
 
  img, iframe {
   max-width: 100%;
-  height: auto;
   margin: 20px 0;
   @include mobile {
    margin: 15px 0;
+  }
+ }
+
+ img {
+  height: auto;
+ }
+
+ iframe {
+  @include mobile {
+   max-height: 240px;
   }
  }
 

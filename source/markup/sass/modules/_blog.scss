@@ -3,12 +3,24 @@
  @include mobile {
   padding-top: 40px;
  }
+}
 
- .main-wrapper {
+#blog, #single {
+
+ > .main-wrapper {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
+  position: relative;
+
+  .grey-line {
+   bottom: -40px;
+   right: -57px;
+   @include tablet-mobile {
+    display: none;
+   }
+  }
  }
 }
 
@@ -28,6 +40,10 @@
  display: flex;
  background: #373737;
  margin-bottom: 20px;
+ position: relative;
+ top: 40px;
+ opacity: 0;
+ transition: 0.7s;
  @include mobile {
   flex-direction: column;
  }
@@ -75,6 +91,11 @@
   color: #ffffff;
   margin-top: 30px;
  }
+
+ &.blog-item--fade-in {
+  opacity: 1;
+  top: 0;
+ }
 }
 
 
@@ -88,3 +109,43 @@
 .blog-more {
  margin: 0 auto;
 }
+
+.blog-loading-layout {
+ width: 100%;
+ display: none;
+ margin-top: 70px;
+ @include mobile {
+  margin-top: 40px;
+ }
+}
+.blog-loading {
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: #373737;
+ font-size: 21px;
+ font-weight: 700;
+ text-transform: uppercase;
+ text-align: center;
+ letter-spacing: 1.3px;
+ @include mobile {
+  font-size: 15px;
+  letter-spacing: 1.2px;
+ }
+
+ .blog-loading__icon {
+  width: 20px;
+  height: 20px;
+  background: url(../img/common/refresh-icon.svg) no-repeat center / contain;
+  margin: 0 0 0 15px;
+  animation: spin 3s linear infinite;
+  @include mobile {
+   width: 16px;
+   height: 16px;
+   margin-left: 10px;
+  }
+ }
+}
+
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

@@ -6,6 +6,20 @@
  @include mobile {
   margin-top: 60px;
  }
+
+ .main-wrapper {
+  position: relative;
+  &:after {
+   @extend .grey-line;
+   content: '';
+   height: calc(100% - 252px);
+   bottom: 20px;
+   right: -57px;
+   @include tablet-mobile {
+    display: none;
+   }
+  }
+ }
 }
 
 .home-clients-intro {

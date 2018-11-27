@@ -259,6 +259,7 @@ button {
  border: none;
  cursor: pointer;
  transition: 0.5s;
+ -webkit-appearance: initial;
 }
 
 em {
@@ -298,6 +299,11 @@ select, .select {
  &:disabled, &[disabled] {
   color: rgba(55, 55, 55, 0.6);
  }
+
+ option:disabled {
+  color: rgba(55, 55, 55, 0.6);
+  font-weight: bold;
+ }
 }
 
 label {
@@ -330,4 +336,8 @@ label {
 
 input:-webkit-autofill {
  -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+input[type="search"] {
+ -webkit-appearance: textfield;
 }

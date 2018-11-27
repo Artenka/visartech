@@ -145,12 +145,16 @@
   width: 0;
   height: 75px;
   background-color: #373737;
-  color: #f37321;
+  color: #fff;
   font-size: 17px;
   transition: 0.7s;
   &:active, &:focus {
    width: calc(100% - 47px - 140px);
    padding: 26px 16px;
+  }
+
+  &:-webkit-autofill {
+   -webkit-box-shadow: 0 0 0 30px #373737 inset;
   }
  }
 
@@ -164,7 +168,22 @@
   letter-spacing: 2.14px;
   padding: 0 45px 0 12px;
   outline: none;
+  position: relative;
   transition: 0.7s;
+  &:before, &:after {
+   content: '';
+   width: 2px;
+   height: 100%;
+   background-color: #373737;
+   position: absolute;
+   top: 0;
+  }
+  &:before {
+   left: -2px;
+  }
+  &:after {
+   right: -2px;
+  }
  }
 }
 

@@ -9,11 +9,22 @@
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
+  position: relative;
   @include tablet {
    justify-content: flex-end;
   }
   @include mobile {
    flex-direction: column;
+  }
+  &:after {
+   @extend .grey-line;
+   content: '';
+   height: calc(100% - 90px);
+   top: -60px;
+   right: -57px;
+   @include tablet-mobile {
+    display: none;
+   }
   }
  }
 }

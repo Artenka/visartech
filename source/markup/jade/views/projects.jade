@@ -6,6 +6,8 @@ block contents
 
   .main#projects
     .main-wrapper
+      include ../partials/scroll
+
       h3.subtitle Visartech
       h1.title.title-line Projects
 
@@ -38,6 +40,9 @@ block contents
           .projects-item__thumb(style="background-image: url(img/projects/projects-thumb-1.jpg)")
           .projects-item__content
             h2.projects-item__title.title-2 Archimedes Principle Simulation
+            .projects-item__category
+              .projects-item__category-icon(style="background-image: url(img/common/header/projects-menu-item-1.svg)")
+              .projects-item__category-text Category
             h3.projects-item__tags.subtitle
               | Simulations
               br

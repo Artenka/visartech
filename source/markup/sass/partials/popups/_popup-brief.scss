@@ -1,0 +1,32 @@
+#popup-brief {
+
+ .popup-scrollarea {
+  display: block;
+ }
+}
+
+.popup-brief {
+ width: 640px;
+ height: auto;
+ background: transparent;
+ padding: 0;
+ margin: 60px auto;
+ @include tablet {
+  height: 520px;
+ }
+ @include mobile {
+  width: 310px;
+  //height: 240px;
+ }
+
+ .popup__close {
+  background-image: url(../img/common/close-icon-black.svg);
+ }
+
+ iframe {
+  width: 100%;
+  @include mobile {
+   height: 4000px!important;
+  }
+ }
+}

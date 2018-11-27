@@ -3,6 +3,7 @@ extends ../layouts/main
 block contents
   section.intro.intro--project
     .main-wrapper
+      include ../partials/scroll-white
       include ../partials/header
       .intro-thumb
         .intro-thumb__image(style="background-image: url(img/common/intro-bg.jpg)")
@@ -50,8 +51,9 @@ block contents
                 .project-row-2-technologies__item-icon(style="background-image: url(img/project/technologies-icon-2.svg)")
               li.project-row-2-technologies__item
                 .project-row-2-technologies__item-icon(style="background-image: url(img/project/technologies-icon-3.svg)")
-            h3.subtitle-2.project-row-2__headline Headline
-            p.project-row-2__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            .project-row-2-about
+              h3.subtitle-2.project-row-2__headline Headline
+              p.project-row-2__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
       .project-video
         img(src="img/common/intro-bg.jpg")

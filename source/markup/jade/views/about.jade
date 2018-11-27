@@ -14,11 +14,29 @@ block contents
     .main-wrapper
       .about-entry
         .about-row-1
+          include ../partials/scroll
+
           .about-row-1__left
             h2.about-row-1__title.title-2.title-line Lorem ipsum<br> dolor sit amet.
           .about-row-1__right
             h3.subtitle-2.about-row-1__subtitle Headline
             p.about-row-1__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet.
+
+        .about-timeline
+          h2.about-timeline__title.title-2.title-line Company History
+          ul.about-timeline-list
+            li.about-timeline-item
+              .about-timeline-item__content
+                h2.about-timeline-item__title Lorem ipsum dolor sit amet
+                h3.about-timeline-item__date 03 Jun 2016
+                p.about-timeline-item__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt numquam fugiat, vitae facere. Provident odio saepe iure, commodi doloribus architecto.
+              .about-timeline-item__icon(style="background-image: url(img/common/clock-icon.svg)")
+            li.about-timeline-item
+              .about-timeline-item__content
+                h2.about-timeline-item__title Lorem ipsum dolor sit amet
+                h3.about-timeline-item__date 03 Jun 2016
+                p.about-timeline-item__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt numquam fugiat, vitae facere. Provident odio saepe iure, commodi doloribus architecto.
+              .about-timeline-item__icon(style="background-image: url(img/common/comments-icon.svg)")
 
         .about-row-2
           .about-row-2__left

@@ -5,6 +5,9 @@ block contents
 
   main.main#blog
     .main-wrapper
+      .grey-line
+      include ../partials/scroll
+
       .blog-main
         h3.subtitle Visartech
         h1.title.title-line Blog
@@ -49,6 +52,11 @@ block contents
       .blog-more-layout
         button.btn.blog-more
           span SHOW MORE
+
+      .blog-loading-layout
+        .blog-loading
+          span Loading
+          .blog-loading__icon
 
 
   include ../partials/footer

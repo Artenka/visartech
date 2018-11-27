@@ -6,8 +6,19 @@
 
  .main-wrapper {
   padding-left: 30px;
+  position: relative;
   @include mobile {
    padding-left: 0;
+  }
+  &:after {
+   @extend .grey-line;
+   content: '';
+   height: calc(100% + 80px);
+   top: -40px;
+   right: -57px;
+   @include tablet-mobile {
+    display: none;
+   }
   }
  }
 }

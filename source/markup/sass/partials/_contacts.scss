@@ -3,6 +3,13 @@
  .contacts {
   background: transparent;
   padding: 0;
+
+  > .main-wrapper {
+   &:before {
+    height: calc(100% + 40px);
+    bottom: -40px;
+   }
+  }
  }
 }
 
@@ -18,8 +25,19 @@
 
  > .main-wrapper {
   display: flex;
+  position: relative;
   @include mobile {
    flex-direction: column;
+  }
+  &:before {
+   @extend .grey-line;
+   content: '';
+   height: calc(100% + 200px);
+   bottom: -50px;
+   right: -57px;
+   @include tablet-mobile {
+    display: none;
+   }
   }
  }
 
@@ -154,6 +172,7 @@
 }
 
 .wpcf7-response-output {
+ display: none;
  order: 2;
  color: #f37321;
  font-size: 0.8em;
