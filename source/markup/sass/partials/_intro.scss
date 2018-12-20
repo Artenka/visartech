@@ -367,6 +367,7 @@
  }
 
  .intro-main-overview__list {
+  width: 100%;
   margin-top: 38px;
   @include mobile {
    margin-top: 25px;
@@ -396,12 +397,12 @@
    .intro-main-overview__item-text-icon, > img {
     height: 20px;
     margin: 2px 10px 0 0;
+    opacity: 0.6;
    }
 
    .intro-main-overview__item-text-icon {
     width: 20px;
     background: no-repeat center / contain;
-    opacity: 0.6;
    }
 
    > img {

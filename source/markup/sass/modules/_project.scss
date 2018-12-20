@@ -147,7 +147,7 @@
  &:after {
   @extend .grey-line;
   content: '';
-  height: calc(100% + 60px);
+  height: calc(100% + 35px);
   top: 0;
   right: -122px;
   @include tablet-mobile {
@@ -402,6 +402,9 @@
  }
 }
 
+.project-row-1 + .project-description {
+ margin-top: 75px;
+}
 
 .project-description {
 
